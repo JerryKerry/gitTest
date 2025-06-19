@@ -28,7 +28,7 @@ public class SelenideRepositorySearchTest {
         $("#user-content-3-using-junit5-extend-test-class").scrollTo().preceding(0)
                 .shouldHave(text("3. Using JUnit5 extend test class:"));
 
-        // Проверка сниппета кода
+        // Проверка сниппета @ExtendWith({SoftAssertsExtension.class})
         $("#wiki-wrapper").shouldHave(text("""
                 @ExtendWith({SoftAssertsExtension.class})
                 class Tests {
@@ -40,9 +40,8 @@ public class SelenideRepositorySearchTest {
                     $("#first").should(visible).click();
                     $("#second").should(visible).click();
                   }
-                }
-                """));
-        // Проверка сниппета кода
+                }"""));
+        // Проверка сниппета @RegisterExtension
         $("#wiki-wrapper").shouldHave(text("""
               class Tests {
                 @RegisterExtension 
@@ -54,9 +53,6 @@ public class SelenideRepositorySearchTest {
                     open("page.html");
 
                     $("#first").should(visible).click();
-                    $("#second").should(visible).click();
-  }
-}
- """));
+                    $("#second").should(visible).click();}}"""));
     }
 }
