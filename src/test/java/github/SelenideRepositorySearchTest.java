@@ -53,6 +53,8 @@ public class SelenideRepositorySearchTest {
                     open("page.html");
 
                     $("#first").should(visible).click();
-                    $("#second").should(visible).click();}}"""));
+                    $("#second").should(visible).click();
+                   }
+                 }"""));
     }
 }
