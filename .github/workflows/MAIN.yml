@@ -1,34 +1,7 @@
-name: Generate Snake
-
-on:
-  schedule:
-    - cron: "0 */6 * * *"
-  workflow_dispatch:
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-
-      # Generate snake graphics with v3 syntax
-      - name: Generate snake
-        uses: Platane/snk@v3
-        id: snake-gen
-        with:
-          github_user_name: jerrykerry
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/github-contribution-grid-snake.gif?color_snake=green&color_dots=#9be9a8,#40c463,#30a14e,#216e39,#1a5432
-
-      # Push generated files to output branch
-      - name: Deploy to output branch
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: output
-          force_orphan: true
-          keep_files: false
+- name: Generate SVG only
+  uses: Platane/snk/svg-only@v3
+  with:
+    github_user_name: jerrykerry
+    outputs: |
+      dist/light-snake.svg
+      dist/dark-snake.svg?palette=github-dark
