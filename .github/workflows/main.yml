@@ -5,7 +5,7 @@
     github_user_name: ${{ github.jerrykerry }}
 
     # list of files to generate.
-    # one file per line. Each output can be customized with options as query string.
+    # one file per line. Each output can be customized with options as query string. 
     #
     #  supported options:
     #  - palette:     A preset of color, one of [github, github-dark, github-light]
