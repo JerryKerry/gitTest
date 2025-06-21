@@ -1,31 +1,41 @@
-name: Generate Snake
+name: Generate Contribution Snake
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
-  workflow_dispatch:
+    - cron: "0 */6 * * *"  # Every 6 hours
+  workflow_dispatch:       # Manual trigger
 
 jobs:
-  build:
+  generate-snake:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required for pushing to branch
 
     steps:
-      - name: Checkout repository
+      # Checkout the output branch where files will be stored
+      - name: Checkout output branch
         uses: actions/checkout@v4
-
-      - name: Generate snake graphics
-        uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: jerrykerry
-          outputs: |
-            dist/light-snake.svg
-            dist/dark-snake.svg?palette=github-dark
-            output-files/github-user-contribution.svg
+          ref: output
+          path: output
 
-      - name: Deploy to output branch
+      # Generate snake graphics
+      - name: Generate contribution snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: JerryKerry
+          outputs: |
+            output/snake.svg
+            output/snake-dark.svg?palette=github-dark
+            output/snake.gif
+
+      # Deploy generated files to output branch
+      - name: Deploy to GitHub Pages branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          force_orphan: false  # Не создавать orphan-ветку
-          keep_files: true 
+          publish_dir: ./output
+          publish_branch: output
+          user_name: "GitHub Actions"
+          user_email: "actions@users.noreply.github.com"
+          force_orphan: true  # Keep only latest files
