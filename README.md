@@ -1,8 +1,13 @@
+# GitTest Repository
 
+![Contribution Snake](https://raw.githubusercontent.com/JerryKerry/gitTest/output/snake.svg)
+
+## My GitHub Contribution Graph as a Snake!
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JerryKerry/gitTest/output/dist/github-contribution-grid-snake-dark.svg">
-  <img alt="GitHub Contribution Graph" src="https://raw.githubusercontent.com/JerryKerry/gitTest/output/dist/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JerryKerry/gitTest/output/snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JerryKerry/gitTest/output/snake.svg">
+  <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/JerryKerry/gitTest/output/snake.svg" width="100%">
 </picture>
 
 
