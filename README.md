@@ -12,7 +12,11 @@
 ![worktester1](https://github.com/user-attachments/assets/9d289d3a-ada5-40ce-8867-0b5580714471)
 
 
-$("h1 div") - CSS-селектор потомков
+
+<h1 align="center">$("h1 div")<a href="https://daniilshat.ru/" target="_blank">- CSS-селектор потомков</a> 
+<img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
+<h3 align="center">Computer science student, IT news writer from Russia 🇷🇺</h3>
+
 
 $("h1").$("div") - Каскадный поиск
 
