@@ -14,8 +14,7 @@
 
 
 
-<h3 align="center">"$("h1 div")"<a target="_blank" style="color: #ff66cc; font-weight: bold; background-color: #fff0f5; padding: 2px 5px; border-radius: 4px; display: inline-block; margin-left: 8px;">- CSS-селектор потомков</a></h3>
-  
-<h3 align="center">"$("h1").$("div")"<a target="_blank" style="color: #ff66cc; font-weight: bold; background-color: #fff0f5; padding: 2px 5px; border-radius: 4px; display: inline-block; margin-left: 8px;">- Каскадный поиск</a></h3>
+<h3 align="center">"$("h1 div")"<a target="_blank" style="color: #ff66cc; font-weight: bold;">- CSS-селектор потомков</a></h3>
 
+<h3 align="center">"$("h1").$("div")"<a target="_blank" style="color: #ff66cc; font-weight: bold;">- Каскадный поиск</a></h3>
 
