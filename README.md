@@ -4,4 +4,3 @@
 ![worktester1](https://github.com/user-attachments/assets/9d289d3a-ada5-40ce-8867-0b5580714471)
 
 
-![snake gif](https://github.com/JerryKerry/gitTest/blob/output/github-snake-dark.svg)
