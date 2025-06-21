@@ -12,3 +12,8 @@
 ![worktester1](https://github.com/user-attachments/assets/9d289d3a-ada5-40ce-8867-0b5580714471)
 
 
+$("h1 div") - CSS-селектор потомков
+
+$("h1").$("div") - Каскадный поиск
+
+![](https://komarev.com/ghpvc/?username=JerryKerry)
