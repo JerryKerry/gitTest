@@ -1,9 +1,8 @@
 ![Snake animation](https://raw.githubusercontent.com/JerryKerry/gitTest/output/github-user-contribution.svg)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/your-username/your-repo/output/dist/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/your-username/your-repo/output/dist/github-contribution-grid-snake.svg">
-  <img alt="GitHub Contribution Graph" src="https://raw.githubusercontent.com/your-username/your-repo/output/dist/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JerryKerry/gitTest/output/dist/github-contribution-grid-snake-dark.svg">
+  <img alt="GitHub Contribution Graph" src="https://raw.githubusercontent.com/JerryKerry/gitTest/output/dist/github-contribution-grid-snake.svg">
 </picture>
 
 
