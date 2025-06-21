@@ -13,18 +13,6 @@
 
 
 
+### `$("h1 div")` :small_red_triangle:- **CSS-селектор потомков** :small_red_triangle:
 
-<h3 align="center">
-  "$("h1 div")"
-  <span style="color: #ff1493; font-weight: bold; background: #fff0f5; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-left: 8px;">
-    - CSS-селектор потомков
-  </span>
-</h3>
-
-<h3 align="center">
-  "$("h1").$("div")"
-  <span style="color: #ff1493; font-weight: bold; background: #fff0f5; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-left: 8px;">
-    - Каскадный поиск
-  </span>
-</h3>
-
+### `$("h1").$("div")` :small_red_triangle:- **Каскадный поиск** :small_red_triangle:
