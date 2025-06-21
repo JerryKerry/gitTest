@@ -1,6 +1,6 @@
 # GitTest Repository
 
-![Contribution Snake](https://raw.githubusercontent.com/JerryKerry/gitTest/output/snake.svg)
+![Contribution Snake](https://raw.githubusercontent.com/JerryKerry/gitTest/output/snake-dark.svg)
 
 ## My GitHub Contribution Graph as a Snake!
 
