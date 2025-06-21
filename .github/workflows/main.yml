@@ -20,11 +20,12 @@ jobs:
           outputs: |
             dist/light-snake.svg
             dist/dark-snake.svg?palette=github-dark
+            output-files/github-user-contribution.svg
 
       - name: Deploy to output branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          publish_branch: output
-          force_orphan: true
+          force_orphan: false  # Не создавать orphan-ветку
+          keep_files: true 
