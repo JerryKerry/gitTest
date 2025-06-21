@@ -14,7 +14,8 @@
 
 
 <h3 align="center">$("h1 div")<a href="https://daniilshat.ru/" target="_blank">- CSS-селектор потомков</h3>
-<h3 align="center">Computer science student, IT news writer from Russia 🇷🇺</h3>
+<h3 align="center">$("h1").$("div") <a href="https://daniilshat.ru/" target="_blank">-Каскадный поиск</h3>
+
 
 
 $("h1").$("div") - Каскадный поиск
