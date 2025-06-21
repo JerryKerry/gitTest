@@ -2,8 +2,6 @@
 
 ![Contribution Snake](https://raw.githubusercontent.com/JerryKerry/gitTest/output/snake-dark.svg)
 
-## My GitHub Contribution Graph as a Snake!
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JerryKerry/gitTest/output/snake-dark.svg">
 </picture>
