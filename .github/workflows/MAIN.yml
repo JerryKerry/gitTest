@@ -1,7 +1,0 @@
-- name: Generate SVG only
-  uses: Platane/snk/svg-only@v3
-  with:
-    github_user_name: jerrykerry
-    outputs: |
-      dist/light-snake.svg
-      dist/dark-snake.svg?palette=github-dark
