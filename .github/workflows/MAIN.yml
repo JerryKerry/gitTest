@@ -10,27 +10,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Обновленный checkout (v4 вместо v2)
       - uses: actions/checkout@v4
 
-      # 2. Обновленная версия snk (v2 вместо master)
-      - uses: Platane/snk@v2
-        id: snake-gif
+      # Generate snake graphics with v3 syntax
+      - name: Generate snake
+        uses: Platane/snk@v3
+        id: snake-gen
         with:
           github_user_name: jerrykerry
-          gif_out_path: dist/github-contribution-grid-snake.gif
-          svg_out_path: dist/github-contribution-grid-snake.svg
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.gif?color_snake=green&color_dots=#9be9a8,#40c463,#30a14e,#216e39,#1a5432
 
-      # 3. Удален ненужный шаг git status (debugging можно включить при необходимости)
-
-      # 4. Обновленный action для публикации на GitHub Pages
-      - uses: peaceiris/actions-gh-pages@v3
-        name: Push to output branch
+      # Push generated files to output branch
+      - name: Deploy to output branch
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # Используем отдельную ветку для результатов
-          publish_branch: output
-          # Путь к сгенерированным файлам
           publish_dir: ./dist
-          # Принудительно перезаписываем историю (для generated content нормально)
+          publish_branch: output
           force_orphan: true
+          keep_files: false
