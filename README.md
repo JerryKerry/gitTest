@@ -13,7 +13,8 @@
 
 
 
-<h1 align="center">$("h1 div")<a target="_blank">- CSS-селектор потомков</h1>
-<h3 align="center">$("h1").$("div")<a target="_blank">-Каскадный поиск</h3>
+<h3 align="center">"$("h1 div")"<a target="_blank">- CSS-селектор потомков</a></h3>
+  
+<h3 align="center">"$("h1").$("div")"<a target="_blank">-Каскадный поиск</a></h3>
 
 
