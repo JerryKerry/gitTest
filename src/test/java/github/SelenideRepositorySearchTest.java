@@ -15,7 +15,7 @@ public class SelenideRepositorySearchTest {
     }
 
     @Test
-    void SearchCodeTest () {
+    void searchCodeTest() {
         //   Открыть страницу Selenide в Github
         open("selenide/selenide");
         // Клик на wiki
